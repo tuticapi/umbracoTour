@@ -1,0 +1,85 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+var home = Umbraco.Content(Guid.Parse("bbd086cc-b2b6-43e4-96e9-d13b2ddfe76f"));
+var logoF = home.Value<IPublishedContent>("logoFooter");
+}
+        <footer class="py-5 bg-dark col-lg-12" >
+            <div class="container col-lg-10">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="row m-1"> 
+                            <h5 style="color: gray; font-weight: 700;"> GRUMA, LA COMPAÑIA QUE NUTRE EL CORAZÓN DE MÉXICO Y EL MUNDO</h5> 
+                        </div>
+                        <div class="row m-1">
+                            <img src="@logoF.Url" style="width:10%;margin-right: 5%;">	
+                                <p class="m-0 text-center text-white" style="font-size: .7em; margin-left: 3%;">© Todos los derechos reservados GRUMA, S.A.B. de C.V.</p>
+                        </div>
+                    </div>
+                    <div class="col-2 col-md-2" >
+                        <h6 class="m-0 text-left text-white">OTRAS MARCAS</h6>
+                        <ul class="list-unstyled text-white" style="font-size: 0.9em">
+                            <li>
+                                <a href="#!" class="text-white">AGROMAS</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">RODOTEC</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">TORTEC</a>
+                            </li>
+                        </ul>
+			                        
+                    </div>
+                    <div class="col-2 col-lg-2">
+                        <h6 class="text-white">CERCA DE TI</h6>
+                        <ul class="list-unstyled text-white" style="font-size: 0.9em">
+                            <li>
+                                <a href="#!" class="text-white">Oferta Laboral</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Preguntas Frecuentes</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Contáctanos</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Sistema de Denuncias</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Proovedores</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Mapa del sitio</a>
+                            </li>
+                        </ul>              
+                    </div>
+                    <div class="col-2 col-lg-2">
+                        <h6 class="m-0 text-left text-white">LEGALES</h6>
+                        <ul class="list-unstyled text-white" style="font-size: 0.9em">
+                            <li>
+                                <a href="#!" class="text-white">Aviso de Privacidad</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-white">Aviso Legal</a>
+                            </li>
+                        </ul>  
+                        <p class="m-0 text-center text-white"></p>
+                    </div>
+
+                    <div>
+                        <ul class="list-unstyled text-white" style="font-size: 0.9em">
+                            <li>
+                                <a href="#" class="fa fa-facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fa fa-twitter"></a>
+                            </li>
+                        </ul>  
+                    </div>
+	        
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+        </footer>
